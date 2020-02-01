@@ -1,8 +1,22 @@
 import React from 'react';
+import axios from 'axios';
 
 class ShoppingCart extends React.Component {
   constructor(props) {
     super(props);
+    this.onClick = this.onClick.bind(this);
+  }
+
+  onClick(e) {
+    e.preventDefault();
+    let quantity = e.target.value;
+    axios.post('/3002', {quantity: quantity})
+    .then(() => {
+      console.log('Posted to shopping cart');
+    })
+    .catch((error) => {
+      console.log(error);
+    })
   }
   
   render() {

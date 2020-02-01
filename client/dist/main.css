@@ -1,0 +1,111 @@
+html {
+  font-size: 100%;
+}
+
+#tom-pricing {
+  font-weight: 900;
+  font-size: 2.571428571428rem;
+}
+
+#tom-pricing-secondary {
+  font-size: .857142857142rem;
+}
+
+#tom-pricing-discount {
+  color: green;
+  font-weight: 700;
+  font-size: 1.142857142857rem;
+}
+
+.tom-bullet {
+  font-size: 100%
+}
+
+.tom-warranty-resize {
+  width:348px;
+  height:71.53px;
+}
+
+.tom-grid-50-left {
+  width: 50%;
+  float: left;
+}
+
+.tom-grid-50-right {
+  width: 50%;
+  float: left;
+}
+
+.tom-modal {
+  display: none;
+  position: fixed; 
+  padding-top: 50px;
+  left: 0; 
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tom-modal-content {
+  position: relative; 
+  background-color: white;
+  padding: 20px; 
+  margin: auto; 
+  width: 75%;  
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+.tom-close-btn {
+  float: right; 
+  color: lightgray; 
+  font-size: 24px;  
+  font-weight: bold;
+}
+
+/*
+.board {
+  display: inline-block;
+  width: auto;
+  background-color: #000;
+}
+
+.board .board-row {
+  width: 100%;
+  display: flex;
+}
+
+.board .board-row:last-child .board-cell {
+  margin-bottom: 20px;
+}
+
+.board .board-row .board-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  height: 50px;
+  width: 50px;
+  margin: 20px 0 0 20px;
+  cursor: pointer;
+}
+
+.board .board-row .board-cell:last-child {
+  margin-right: 20px;
+}
+
+.board .board-row .board-cell.selected {
+  background-color: #aaa;
+}
+
+.board .board-row .board-cell .board-cell-content {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0000dd;
+  font-size: 20pt;
+  font-weight: 600;
+}
+*/
