@@ -67,6 +67,11 @@ html {
   font-weight: bold;
 }
 
+.tom-lowStock {
+  font-size: 1.285714285714rem;
+  color: red;
+}
+
 /*
 .board {
   display: inline-block;

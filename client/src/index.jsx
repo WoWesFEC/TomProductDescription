@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import axios from 'axios';
 import Description from './components/Description.jsx';
 import Pricing from './components/Pricing.jsx';
+import LowStock from './components/LowStock.jsx';
 import SaveShare from './components/SaveShare.jsx';
 import ShipAvailability from './components/ShipAvailability.jsx';
 import ShoppingCart from './components/ShoppingCart.jsx';
@@ -16,7 +17,7 @@ class App extends React.Component {
       dogs : ['fluffy', 'spot', 'fido'],
       price : 3.98,
       name : 'Bob the Dinosaur',
-      productId : 57,
+      productId : 65,
       descriptions : ['this is really useful', 'you should buy this', 'buy extra for your friends, if you have some']
     };
     this.clickSave = this.clickSave.bind(this);
@@ -38,6 +39,7 @@ class App extends React.Component {
     return (
       <div>
         <Pricing price={this.state.price} id={this.state.productId} />
+        <LowStock id={this.state.productId} />
         <Description id={this.state.productId} bullets={this.state.descriptions} />
         <Warranty id={this.state.productId} />
         <ShoppingCart name={this.state.name} price={this.state.price}/>
