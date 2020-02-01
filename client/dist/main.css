@@ -37,28 +37,6 @@ html {
   color: #0471AF;
 }
 
-.tom-heart-saved {
-  background-color: red;
-  height: 20px;
-  transform: rotate(-45deg);
-  width: 20px;
-}
-
-.tom-heart-saved:before,
-.tom-heart-saved:after {
-  content: "";
-  background-color: red;
-  border-radius: 50%;
-  height: 20px;
-  position: absolute;
-  width: 20px;
-}
-
-.tom-heart-saved:before {
-  top: -10px;
-  left: 0;
-}
-
 .tom-saved {
   cursor: not-allowed;
   color: #999!important;
@@ -134,6 +112,120 @@ html {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.tom-modal-stores {
+  display: none;
+  position: fixed; 
+  padding-top: 24px;
+  left: 0; 
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  margin: 7% auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.tom-modal-stores-title {
+  margin: 0;
+  line-height: 1.5rem;
+  font-size: 1.285714285714rem;
+  color: #333;
+}
+
+.tom-modal-stores-content {
+  position: relative; 
+  background-color: white;
+  padding: 20px; 
+  margin: auto; 
+  width: 568px;  
+  border: 1px solid rgba(0,0,0,0.2);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+.tom-modal-stores-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.tom-modal-stores-item {
+  color: black;
+  font-weight: 400;
+  width: 10000px;
+  text-decoration: none;
+  display: table-cell;
+}
+
+.tom-modal-stores-storename {
+  color: #0471AF;
+  font-weight: 700;
+}
+
+.tom-media-middle {
+  vertical-align: middle;
+  display: table-cell;
+  width: 4000px;
+  padding-left: 10px;
+  margin: 0px;
+}
+
+.tom-align-right {
+  padding-top: 0px;
+  right: 15px;
+  text-align: right;
+  display: block;
+  font-size: 1rem;
+}
+
+.tom-other-stores-button {
+  padding-top: 0px;
+  padding-right: 15px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  height: 34px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #0471AF;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #FFF;
+  background-color: #0471AF;
+  right: 15px;
+  position: absolute;
+}
+
+.tom-modal-stores-line {
+  background-color: gray;
+}
+
+.tom-stores-close-btn {
+  float: right; 
+  color: lightgray; 
+  font-size: 24px;  
+  font-weight: bold;
+}
+
+.tom-stores-close-btn:hover,
+.tom-stores-close-btn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tom-grid-store {
+  width: 50%;
+  float: right;
+}
+
+.tom-grid-ship {
+  width: 50%;
+  float: right;
 }
 
 /*

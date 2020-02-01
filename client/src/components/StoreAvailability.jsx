@@ -1,16 +1,59 @@
 import React from 'react';
-//import StoreImage from '../images/LowesStore.PNG';
+import OtherStoresModal from './OtherStoresModal.jsx';
 
-const StoreAvailability = (props) => (
-  <div>
-    <img src="../images/LowesStore.PNG" alt="Store Icon"></img>
-    <h3>FREE Store Pickup</h3>
-    <div>9 available today at S.E. Austin Lowe's!</div>
-    <div><strong>Aisle</strong> 67, <strong>Bay</strong> 93</div>
-    <div className="pd-other-stores grid-100 v-spacing-large hide-print">
-      <a href="#" className="js-store-locator-search btn btn-secondary btn-small met-check-other-stores">Check Other Stores</a>
-    </div>
-  </div>
-)
+class StoreAvailability extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    if (this.props.id % 21 === 0) {
+      return (
+        <div className="tom-grid-store">
+          <div>
+            <img src="../images/LowesStore.PNG" alt="Store Icon"></img>
+            <h4>Ships to Store FREE</h4>
+            <p>Ready for pickup: Estimated by 02/29/2020</p>
+            <OtherStoresModal close={this.props.storesClose} stores={this.props.stores} id={this.props.id} />
+          </div>
+        </div>
+      )
+    } else if (this.props.id % 24 === 0) {
+      return (
+        <div className="tom-grid-store">
+          <div>
+            <img src="../images/LowesStore.PNG" alt="Store Icon"></img>
+            <h4>FREE Store Pickup</h4>
+            <p>Unavailable for Pickup at S.E. Austin WoWe's</p>
+            <OtherStoresModal close={this.props.storesClose} stores={this.props.stores} id={this.props.id} />
+          </div>
+        </div>
+      )
+    } else if (this.props.id % 9 === 3) {
+      return (
+        <div className="tom-grid-store">
+          <div>
+            <img src="../images/LowesStore.PNG" alt="Store Icon"></img>
+            <h4>Ships to Store FREE</h4>
+            <p>Available for Pickup at S.E. Austin WoWe's</p>
+            <OtherStoresModal close={this.props.storesClose} stores={this.props.stores} id={this.props.id} />
+          </div>
+        </div>
+      )
+    } else {
+      return (
+        <div className="tom-grid-store">
+          <div>
+            <img src="../images/LowesStore.PNG" alt="Store Icon"></img>
+            <h4>Ships to Store FREE</h4>
+            <p>{this.props.id % 9} available for Pickup at S.E. Austin WoWe's</p>
+            <div><strong>Aisle</strong> {this.props.id % 48}, <strong>Bay</strong> {this.props.id % 42}</div>
+            <OtherStoresModal close={this.props.storesClose} stores={this.props.stores} id={this.props.id} />
+          </div>
+        </div>
+      )
+    }
+  }
+}
 
 export default StoreAvailability;
