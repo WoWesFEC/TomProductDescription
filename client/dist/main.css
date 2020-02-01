@@ -2,6 +2,14 @@ html {
   font-size: 100%;
 }
 
+.tom-component {
+  width: 50%;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
 #tom-pricing {
   font-weight: 900;
   font-size: 2.571428571428rem;
@@ -168,7 +176,6 @@ html {
 }
 
 .tom-media-middle {
-  vertical-align: middle;
   display: table-cell;
   width: 4000px;
   padding-left: 10px;
@@ -176,7 +183,7 @@ html {
 }
 
 .tom-align-right {
-  padding-top: 0px;
+  padding-top: 15px;
   right: 15px;
   text-align: right;
   display: block;
@@ -189,7 +196,7 @@ html {
   padding-bottom: 0px;
   padding-left: 15px;
   height: 34px;
-  display: inline-block;
+  display: block;
   text-align: center;
   border: 1px solid #0471AF;
   font-weight: 400;

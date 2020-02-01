@@ -60,7 +60,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="tom-component">
         <Pricing price={this.state.price} id={this.state.productId} />
         <LowStock id={this.state.productId} />
         <Description id={this.state.productId} bullets={this.state.descriptions} />
@@ -68,7 +68,7 @@ class App extends React.Component {
         <ShoppingCart name={this.state.name} price={this.state.price}/>
         <SaveShare url="http://www.google.com" image0="https://pbs.twimg.com/profile_banners/98042827/1528588486/1080x360" save={this.clickSave} share={this.clickShare} shareClose={this.clickShareClose} id={this.state.productId} name={this.state.name}/> <br />
         <div id="grid-100">
-          <ShipAvailability id={this.state.productId}/><StoreAvailability id={this.state.productId} stores={this.clickStores} storesClose={this.clickStoresClose} />
+          <ShipAvailability price={this.state.price} id={this.state.productId}/><StoreAvailability id={this.state.productId} stores={this.clickStores} storesClose={this.clickStoresClose} />
         </div>
       </div>
     )

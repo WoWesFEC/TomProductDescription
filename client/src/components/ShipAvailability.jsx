@@ -1,11 +1,47 @@
 import React from 'react';
 
-const ShipAvailability = (props) => (
-  <div className="tom-grid-ship">
-      <img src="../images/LowesTruck.PNG" alt="Shipping Truck"></img>
-      <h3>{'Shipping & Delivery'}</h3>
-      <div>Here's your table, sir!</div>
-  </div>
-)
+const ShipAvailability = function(props) {
+  let deliveryStatus = '';
+  if (props.price > 45) {
+    deliveryStatus = 'FREE Delivery';
+  } else {
+    deliveryStatus = 'Shipping & Delivery';
+  }
+
+  if (props.id % 14 === 0) {
+    return (
+      <div className="tom-grid-ship">
+        <img src="../images/LowesTruck.PNG" alt="Shipping Truck"></img>
+        <h4>{deliveryStatus}</h4>
+        <div>
+          <img src="../images/NoShipping.png" alt="unavailable"></img>
+          <span>Currently unavailable</span>
+        </div>
+      </div>
+    )
+  } else if (props.id % 21 === 0) {
+    return (
+      <div className="tom-grid-ship">
+        <img src="../images/LowesTruck.PNG" alt="Shipping Truck"></img>
+        <h4>{deliveryStatus}</h4>
+        <div>
+          <img src="../images/greenCheckbox.png" alt="Green Checkbox"></img>
+          <span>Ready for delivery: Estimated on 02/29/2020</span>
+        </div>
+      </div>
+    )
+  } else {
+    return (
+      <div className="tom-grid-ship">
+        <img src="../images/LowesTruck.PNG" alt="Shipping Truck"></img>
+        <h4>{deliveryStatus}</h4>
+        <div>
+          <img src="../images/greenCheckbox.png" alt="Green Checkbox"></img>
+          <span>Available!</span>
+        </div>
+      </div>
+    )
+  }
+}
 
 export default ShipAvailability;
