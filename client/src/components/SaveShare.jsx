@@ -30,10 +30,10 @@ class SaveShare extends React.Component {
           <SaveOnly saved={this.state.saved} saveFavorite={this.saveFavorite} />
         </div>
         <div className="tom-grid-50-right">
-          <a href="#share" type="button" id="tom-share-button" onClick={this.props.share} data-toggle="modal"><span>SHARE</span></a>
-          <div className="tom-modal-share">
+          <a href="#share" type="button" id="tom-share-button" onClick={this.props.share}><span>SHARE</span></a>
+          <div className="tom-modal-share" id="tom-modal-share">
             <div className="tom-modal-share-content">
-              <span className="tom-share-close-btn">&times;</span>
+              <span className="tom-share-close-btn" onClick={this.props.shareClose}>&times;</span>
               <h4 className="tom-modal-share-title">Share with a friend</h4>
               <ul>
                 <li className="tom-modal-share-item"><a href={`https://www.facebook.com/dialog/share?app_id=100208560157973&display=page&href=${this.props.url}&redirect_uri=${this.props.url}`}>Post it</a></li>

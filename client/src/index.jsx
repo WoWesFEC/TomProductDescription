@@ -38,6 +38,12 @@ class App extends React.Component {
 
   clickShare(e) {
     console.log('Tried to share');
+    document.getElementById('tom-modal-share').style.display = 'block';
+  }
+
+  clickShareClose(e) {
+    console.log('Tried to close');
+    document.getElementById('tom-modal-share').style.display = 'none';
   }
 
   render() {
@@ -48,7 +54,7 @@ class App extends React.Component {
         <Description id={this.state.productId} bullets={this.state.descriptions} />
         <Warranty id={this.state.productId} />
         <ShoppingCart name={this.state.name} price={this.state.price}/>
-        <SaveShare url="http://www.google.com" image0="https://pbs.twimg.com/profile_banners/98042827/1528588486/1080x360" save={this.clickSave} share={this.clickShare} id={this.state.productId} name={this.state.name}/>
+        <SaveShare url="http://www.google.com" image0="https://pbs.twimg.com/profile_banners/98042827/1528588486/1080x360" save={this.clickSave} share={this.clickShare} shareClose={this.clickShareClose} id={this.state.productId} name={this.state.name}/>
         <StoreAvailability id={this.state.productId}/>
         <ShipAvailability id={this.state.productId}/>
       </div>
