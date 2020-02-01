@@ -37,6 +37,28 @@ html {
   color: #0471AF;
 }
 
+.tom-heart-saved {
+  background-color: red;
+  height: 20px;
+  transform: rotate(-45deg);
+  width: 20px;
+}
+
+.tom-heart-saved:before,
+.tom-heart-saved:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 20px;
+  position: absolute;
+  width: 20px;
+}
+
+.tom-heart-saved:before {
+  top: -10px;
+  left: 0;
+}
+
 .tom-saved {
   cursor: not-allowed;
   color: #999!important;
