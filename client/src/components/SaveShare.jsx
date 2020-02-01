@@ -35,10 +35,13 @@ class SaveShare extends React.Component {
             <div className="tom-modal-share-content">
               <span className="tom-share-close-btn" onClick={this.props.shareClose}>&times;</span>
               <h4 className="tom-modal-share-title">Share with a friend</h4>
-              <ul>
+              <ul className="tom-modal-share-list">
                 <li className="tom-modal-share-item"><a href={`https://www.facebook.com/dialog/share?app_id=100208560157973&display=page&href=${this.props.url}&redirect_uri=${this.props.url}`}>Post it</a></li>
+                <hr></hr>
                 <li className="tom-modal-share-item"><a href={`https://twitter.com/intent/tweet?url=${this.props.url}&text=${this.props.name}`}>Tweet it</a></li>
+                <hr></hr>
                 <li className="tom-modal-share-item"><a href={`https://pinterest.com/pin/create/button/url=${this.props.url}&media=${this.props.image0}&description=${this.props.name}`}>Pin it</a></li>
+                <hr></hr>
                 <li className="tom-modal-share-item"><a href={`${this.props.url}`}>Email it</a></li>
               </ul>
             </div>
