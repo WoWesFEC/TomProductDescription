@@ -17,8 +17,13 @@ html {
   font-size: 1.142857142857rem;
 }
 
+.tom-lowStock {
+  font-size: 1.285714285714rem;
+  color: #DD0637;
+}
+
 .tom-bullet {
-  font-size: 100%
+  font-size: 100%;
 }
 
 .tom-warranty-resize {
@@ -29,14 +34,23 @@ html {
 .tom-grid-50-left {
   width: 50%;
   float: left;
+  color: #0471AF;
+}
+
+.tom-saved {
+  cursor: not-allowed;
+  color: #999!important;
+  background-color: #E5E5E5;
+  border-color: #E5E5E5!important;
 }
 
 .tom-grid-50-right {
   width: 50%;
   float: left;
+  color: #0471AF;
 }
 
-.tom-modal {
+.tom-modal-share {
   display: none;
   position: fixed; 
   padding-top: 50px;
@@ -48,7 +62,14 @@ html {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.tom-modal-content {
+.tom-modal-share-title {
+  margin: 0;
+  line-height: 1.5rem;
+  font-size: 1.285714285714rem;
+  color: #333;
+}
+
+.tom-modal-share-content {
   position: relative; 
   background-color: white;
   padding: 20px; 
@@ -60,16 +81,21 @@ html {
   animation-duration: 0.4s
 }
 
-.tom-close-btn {
+.tom-modal-share-item {
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  color: #0471AF;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.tom-share-close-btn {
   float: right; 
   color: lightgray; 
   font-size: 24px;  
   font-weight: bold;
-}
-
-.tom-lowStock {
-  font-size: 1.285714285714rem;
-  color: red;
 }
 
 /*

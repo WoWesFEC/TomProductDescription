@@ -21,6 +21,7 @@ class App extends React.Component {
       descriptions : ['this is really useful', 'you should buy this', 'buy extra for your friends, if you have some']
     };
     this.clickSave = this.clickSave.bind(this);
+    this.clickShare = this.clickShare.bind(this);
   }
 
   componentDidMount() {
@@ -35,6 +36,10 @@ class App extends React.Component {
     console.log(`Saved ${this.state.name}, with id of ${this.state.productId}, or would if we had back-end save functionality.`);
   }
 
+  clickShare(e) {
+    console.log('Tried to share');
+  }
+
   render() {
     return (
       <div>
@@ -43,7 +48,7 @@ class App extends React.Component {
         <Description id={this.state.productId} bullets={this.state.descriptions} />
         <Warranty id={this.state.productId} />
         <ShoppingCart name={this.state.name} price={this.state.price}/>
-        <SaveShare save={this.clickSave} id={this.state.productId} name={this.state.name}/>
+        <SaveShare url="http://www.google.com" image0="https://pbs.twimg.com/profile_banners/98042827/1528588486/1080x360" save={this.clickSave} share={this.clickShare} id={this.state.productId} name={this.state.name}/>
         <StoreAvailability id={this.state.productId}/>
         <ShipAvailability id={this.state.productId}/>
       </div>
