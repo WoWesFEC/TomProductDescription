@@ -3,14 +3,14 @@ import React from 'react';
 const SaveOnly = function(props) {
   if (props.saved === false) {
     return (
-      <div>
-        <img src="../images/unsavedHeart.PNG"></img><a href="#save" id="left btn btn-secondary btn-large btn-block" onClick={props.saveFavorite}><i aria-hidden="true" className="icon-heart-outline"></i> <span>SAVE</span></a>
+      <div className="tom-unsaved">
+        <img src="../images/unsavedHeart.PNG"></img><a href="#save" onClick={props.saveFavorite}><i aria-hidden="true" className="icon-heart-outline"></i> <span>SAVE</span></a>
       </div>
     )
   } else {
     return (
-      <div>
-        <img src="../images/savedHeart.PNG"></img><a href="#save" className="tom-saved"><span>SAVED</span></a>
+      <div className="tom-saved">
+        <img src="../images/savedHeart.PNG"></img><a href="#save"><span>SAVED</span></a>
       </div>
     )
   }

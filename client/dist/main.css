@@ -42,6 +42,7 @@ html {
 .tom-cart-buttons {
   width: 40%;
   float: left;
+  height: 54px;
 }
 
 .tom-cart-button-group {
@@ -85,6 +86,7 @@ html {
 .tom-cart {
   width: 60%;
   float: left;
+  height: 54px;
 }
 
 .tom-cart-submit {
@@ -109,23 +111,95 @@ html {
   background-color: #338700;
 }
 
+.tom-grid-100 {
+  width: 100%;
+  left: 0px;
+}
+
+.tom-grid-100-saveshare {
+  width: 100%;
+  left: 0px;
+  clear: both;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  height: 39px;
+}
+
 .tom-grid-50-left {
   width: 50%;
   float: left;
+  left: 0px;
   color: #0471AF;
+  box-sizing: border-box;
+  border: 1px;
+  vertical-align: middle;
+}
+
+.tom-unsaved {
+  color: #0471AF;
+  display: block;
+  width: 100%;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  box-sizing: border-box;
+  padding: 0;
+  height: 54px;
+  cursor: pointer;
+  border-radius: 0;
+  border: 1px solid #CCC;
+  text-align: center;
 }
 
 .tom-saved {
   cursor: not-allowed;
+  display: block;
   color: #999!important;
   background-color: #E5E5E5;
   border-color: #E5E5E5!important;
+  display: block;
+  width: 100%;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  box-sizing: border-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  height: 54px;
+  cursor: pointer;
+  border-radius: 0;
+  border: 1px solid #CCC;
+  text-align: center;
 }
 
 .tom-grid-50-right {
   width: 50%;
   float: left;
   color: #0471AF;
+  vertical-align: middle;
+}
+
+.tom-share-only {
+  color: #0471AF;
+  display: block;
+  width: 100%;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  box-sizing: border-box;
+  padding: 0;
+  height: 54px;
+  cursor: pointer;
+  border-radius: 0;
+  border: 1px solid #CCC;
+  text-align: center;
 }
 
 .tom-modal-share {

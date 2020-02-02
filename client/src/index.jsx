@@ -66,9 +66,11 @@ class App extends React.Component {
         <Description id={this.state.productId} bullets={this.state.descriptions} />
         <Warranty id={this.state.productId} />
         <ShoppingCart name={this.state.name} price={this.state.price}/>
-        <SaveShare url="http://www.google.com" image0="https://pbs.twimg.com/profile_banners/98042827/1528588486/1080x360" save={this.clickSave} share={this.clickShare} shareClose={this.clickShareClose} id={this.state.productId} name={this.state.name}/> <br />
-        <div id="grid-100">
-          <ShipAvailability price={this.state.price} id={this.state.productId}/><StoreAvailability id={this.state.productId} stores={this.clickStores} storesClose={this.clickStoresClose} />
+        <SaveShare url="http://www.google.com" image0="https://pbs.twimg.com/profile_banners/98042827/1528588486/1080x360" save={this.clickSave} share={this.clickShare} shareClose={this.clickShareClose} id={this.state.productId} name={this.state.name}/>
+        <div>
+          <div className="tom-grid-100">
+            <ShipAvailability price={this.state.price} id={this.state.productId}/><StoreAvailability id={this.state.productId} stores={this.clickStores} storesClose={this.clickStoresClose} />
+          </div>
         </div>
       </div>
     )
