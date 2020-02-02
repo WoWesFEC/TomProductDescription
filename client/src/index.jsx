@@ -4,6 +4,7 @@ import axios from 'axios';
 import Description from './components/Description.jsx';
 import Pricing from './components/Pricing.jsx';
 import LowStock from './components/LowStock.jsx';
+import OtherStoresModal from './components/OtherStoresModal.jsx';
 import SaveShare from './components/SaveShare.jsx';
 import ShipAvailability from './components/ShipAvailability.jsx';
 import ShoppingCart from './components/ShoppingCart.jsx';
@@ -69,8 +70,10 @@ class App extends React.Component {
         <SaveShare url="http://www.google.com" image0="https://pbs.twimg.com/profile_banners/98042827/1528588486/1080x360" save={this.clickSave} share={this.clickShare} shareClose={this.clickShareClose} id={this.state.productId} name={this.state.name}/>
         <div>
           <div className="tom-grid-100">
-            <ShipAvailability price={this.state.price} id={this.state.productId}/><StoreAvailability id={this.state.productId} stores={this.clickStores} storesClose={this.clickStoresClose} />
+            <StoreAvailability id={this.state.productId} stores={this.clickStores} storesClose={this.clickStoresClose} />
+            <ShipAvailability price={this.state.price} id={this.state.productId}/>
           </div>
+        <OtherStoresModal close={this.state.storesClose} stores={this.state.stores} id={this.state.id}/>
         </div>
       </div>
     )

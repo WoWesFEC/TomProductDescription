@@ -1,5 +1,5 @@
 import React from 'react';
-import OtherStoresModal from './OtherStoresModal.jsx';
+//import OtherStoresModal from './OtherStoresModal.jsx';
 
 class StoreAvailability extends React.Component {
   constructor(props) {
@@ -11,10 +11,9 @@ class StoreAvailability extends React.Component {
       return (
         <div className="tom-grid-store">
           <div>
-            <img src="../images/LowesStore.PNG" alt="Store Icon"></img>
-            <h4>Ships to Store FREE</h4>
+            <img src="../images/LowesStore.PNG" alt="Store Icon" className="tom-shipping-box"></img>
+            <h4 className="tom-shipping-note">Ships to Store FREE</h4>
             <img src="../images/GreenCheckbox.PNG" alt="Green Checkbox"></img><p>Ready for pickup: Estimated by 02/29/2020</p>
-            <OtherStoresModal close={this.props.storesClose} stores={this.props.stores} id={this.props.id} />
           </div>
         </div>
       )
@@ -22,10 +21,9 @@ class StoreAvailability extends React.Component {
       return (
         <div className="tom-grid-store">
           <div>
-            <img src="../images/LowesStore.PNG" alt="Store Icon"></img>
-            <h4>FREE Store Pickup</h4>
+            <img src="../images/LowesStore.PNG" alt="Store Icon" className="tom-shipping-box"></img>
+            <h4 className="tom-shipping-note">FREE Store Pickup</h4>
             <img src="../images/NoShipping.png" alt="unavailable"></img><p>Unavailable for Pickup at S.E. Austin WoWe's</p>
-            <OtherStoresModal close={this.props.storesClose} stores={this.props.stores} id={this.props.id} />
           </div>
         </div>
       )
@@ -33,10 +31,9 @@ class StoreAvailability extends React.Component {
       return (
         <div className="tom-grid-store">
           <div>
-            <img src="../images/LowesStore.PNG" alt="Store Icon"></img>
-            <h4>Ships to Store FREE</h4>
+            <img src="../images/LowesStore.PNG" alt="Store Icon" className="tom-shipping-box"></img>
+            <h4 className="tom-shipping-note">Ships to Store FREE</h4>
             <img src="../images/GreenCheckbox.PNG" alt="Green Checkbox"></img><p>Available for Pickup at S.E. Austin WoWe's</p>
-            <OtherStoresModal close={this.props.storesClose} stores={this.props.stores} id={this.props.id} />
           </div>
         </div>
       )
@@ -44,11 +41,10 @@ class StoreAvailability extends React.Component {
       return (
         <div className="tom-grid-store">
           <div>
-            <img src="../images/LowesStore.PNG" alt="Store Icon"></img>
-            <h4>Ships to Store FREE</h4>
+            <img src="../images/LowesStore.PNG" alt="Store Icon" className="tom-shipping-box"></img>
+            <h4 className="tom-shipping-note">Ships to Store FREE</h4>
             <p><img src="../images/GreenCheckbox.PNG" alt="Green Checkbox"></img><span>{this.props.id % 9} available for Pickup at S.E. Austin WoWe's</span></p>
             <div><strong>Aisle</strong> {this.props.id % 48 + 1}, <strong>Bay</strong> {this.props.id % 42 + 1}</div>
-            <OtherStoresModal close={this.props.storesClose} stores={this.props.stores} id={this.props.id} />
           </div>
         </div>
       )

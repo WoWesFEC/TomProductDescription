@@ -11,8 +11,8 @@ const ShipAvailability = function(props) {
   if (props.id % 14 === 0) {
     return (
       <div className="tom-grid-ship">
-        <img src="../images/LowesTruck.PNG" alt="Shipping Truck"></img>
-        <h4>{deliveryStatus}</h4>
+        <img src="../images/LowesTruck.PNG" alt="Shipping Truck" className="tom-truck"></img>
+        <h4 className="tom-shipping-note">{deliveryStatus}</h4>
         <div>
           <img src="../images/NoShipping.png" alt="unavailable"></img>
           <span>Currently unavailable</span>
@@ -22,8 +22,8 @@ const ShipAvailability = function(props) {
   } else if (props.id % 21 === 0) {
     return (
       <div className="tom-grid-ship">
-        <img src="../images/LowesTruck.PNG" alt="Shipping Truck"></img>
-        <h4>{deliveryStatus}</h4>
+        <img src="../images/LowesTruck.PNG" alt="Shipping Truck" className="tom-truck"></img>
+        <h4 className="tom-shipping-note">{deliveryStatus}</h4>
         <div>
           <img src="../images/greenCheckbox.png" alt="Green Checkbox"></img>
           <span>Ready for delivery: Estimated on 02/29/2020</span>
@@ -33,8 +33,8 @@ const ShipAvailability = function(props) {
   } else {
     return (
       <div className="tom-grid-ship">
-        <img src="../images/LowesTruck.PNG" alt="Shipping Truck"></img>
-        <h4>{deliveryStatus}</h4>
+        <img src="../images/LowesTruck.PNG" alt="Shipping Truck" className="tom-truck"></img>
+        <h4 className="tom-shipping-note">{deliveryStatus}</h4>
         <div>
           <img src="../images/greenCheckbox.png" alt="Green Checkbox"></img>
           <span>Available!</span>
