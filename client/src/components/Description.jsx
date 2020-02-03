@@ -20,7 +20,7 @@ class Description extends React.Component {
       <div>
         <ul>
           {this.state.bullets.map((description, index) => (
-            <li key={index}>{description}</li>
+            <li className="tom-bullet" key={index}>{description}</li>
           ))}
         </ul>
       </div>

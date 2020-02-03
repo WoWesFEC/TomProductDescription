@@ -1,0 +1,401 @@
+html {
+  font-size: 100%;
+}
+
+.tom-component {
+  width: 50%;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+#tom-pricing {
+  font-weight: 900;
+  font-size: 2.571428571428rem;
+}
+
+#tom-pricing-secondary {
+  font-size: .857142857142rem;
+}
+
+#tom-pricing-discount {
+  color: green;
+  font-weight: 700;
+  font-size: 1.142857142857rem;
+}
+
+.tom-lowStock {
+  font-size: 1.285714285714rem;
+  color: #DD0637;
+}
+
+.tom-bullet {
+  font-size: 100%;
+}
+
+.tom-warranty-resize {
+  width:348px;
+  height:71.53px;
+}
+
+.tom-cart-buttons {
+  width: 40%;
+  float: left;
+  height: 54px;
+}
+
+.tom-cart-button-group {
+  width: 100%;
+  height: 54px;
+  margin: 0;
+  padding: 0;
+  display: table;
+  box-sizing: border-box;
+}
+
+.tom-cart-adjuster {
+  color: #0471AF;
+  cursor: pointer;
+  display: table-cell;
+  border: 1px solid #CCC;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-top: 0px;
+  padding-right: 15px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  background-color: #FFF;
+  height: 54px;
+}
+
+.tom-cart-quantity {
+  width: 50px;
+  text-align: center;
+  padding: 0;
+  display: table-cell;
+  height: 54px;
+  font-size: 1rem;
+  border: 1px solid #CCC;
+  box-sizing: border-box;
+  background-color: #FFF;
+  border-radius: 0;
+}
+
+.tom-cart {
+  width: 60%;
+  float: left;
+  height: 54px;
+}
+
+.tom-cart-submit {
+  display: block;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 0px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  height: 54px;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  font-size: 1rem;
+  color: #FFF;
+  background-color: #338700;
+}
+
+.tom-grid-100-saveshare {
+  width: 100%;
+  left: 0px;
+  clear: both;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  height: 39px;
+}
+
+.tom-grid-50-left {
+  width: 50%;
+  float: left;
+  left: 0px;
+  color: #0471AF;
+  box-sizing: border-box;
+  border: 1px;
+  vertical-align: middle;
+}
+
+.tom-unsaved {
+  color: #0471AF;
+  display: block;
+  width: 100%;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  box-sizing: border-box;
+  padding: 0;
+  height: 54px;
+  cursor: pointer;
+  border-radius: 0;
+  border: 1px solid #CCC;
+  text-align: center;
+}
+
+.tom-saved {
+  cursor: not-allowed;
+  display: block;
+  color: #999!important;
+  background-color: #E5E5E5;
+  border-color: #E5E5E5!important;
+  display: block;
+  width: 100%;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  box-sizing: border-box;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  height: 54px;
+  cursor: pointer;
+  border-radius: 0;
+  border: 1px solid #CCC;
+  text-align: center;
+}
+
+.tom-grid-50-right {
+  width: 50%;
+  float: left;
+  color: #0471AF;
+  vertical-align: middle;
+}
+
+.tom-share-only {
+  color: #0471AF;
+  display: block;
+  width: 100%;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  box-sizing: border-box;
+  padding: 0;
+  height: 54px;
+  cursor: pointer;
+  border-radius: 0;
+  border: 1px solid #CCC;
+  text-align: center;
+}
+
+.tom-modal-share {
+  display: none;
+  position: fixed; 
+  padding-top: 24px;
+  left: 0; 
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  margin: 7% auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.tom-modal-share-title {
+  margin: 0;
+  line-height: 1.5rem;
+  font-size: 1.285714285714rem;
+  color: #333;
+}
+
+.tom-modal-share-content {
+  position: relative; 
+  background-color: white;
+  padding: 20px; 
+  margin: auto; 
+  width: 234px;  
+  border: 1px solid rgba(0,0,0,0.2);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+.tom-modal-share-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.tom-modal-share-item {
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  color: #0471AF;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.tom-share-close-btn {
+  float: right; 
+  color: lightgray; 
+  font-size: 24px;  
+  font-weight: bold;
+}
+
+.tom-share-close-btn:hover,
+.tom-share-close-btn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tom-grid-100 {
+  width: 100%;
+  left: 0px;
+}
+
+.tom-modal-stores {
+  display: none;
+  position: fixed; 
+  padding-top: 24px;
+  left: 0; 
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  margin: 7% auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.tom-modal-stores-title {
+  margin: 0;
+  line-height: 1.5rem;
+  font-size: 1.285714285714rem;
+  color: #333;
+}
+
+.tom-modal-stores-content {
+  position: relative; 
+  background-color: white;
+  padding: 20px; 
+  margin: auto; 
+  width: 568px;  
+  border: 1px solid rgba(0,0,0,0.2);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+.tom-modal-stores-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.tom-modal-stores-item {
+  color: black;
+  font-weight: 400;
+  width: 10000px;
+  text-decoration: none;
+  display: table-cell;
+}
+
+.tom-modal-stores-storename {
+  color: #0471AF;
+  font-weight: 700;
+}
+
+.tom-media-middle {
+  display: table-cell;
+  width: 4000px;
+  padding-left: 10px;
+  margin: 0px;
+}
+
+.tom-align-right {
+  padding-top: 15px;
+  right: 15px;
+  text-align: right;
+  display: block;
+  font-size: 1rem;
+}
+
+.tom-other-stores-button {
+  padding-top: 0px;
+  padding-right: 15px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  height: 34px;
+  display: block;
+  text-align: center;
+  border: 1px solid #0471AF;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #FFF;
+  background-color: #0471AF;
+  right: 15px;
+  position: absolute;
+}
+
+.tom-modal-stores-line {
+  background-color: gray;
+}
+
+.tom-stores-close-btn {
+  float: right; 
+  color: lightgray; 
+  font-size: 24px;  
+  font-weight: bold;
+}
+
+.tom-stores-close-btn:hover,
+.tom-stores-close-btn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tom-grid-store {
+  width: 49%;
+  float: left;
+  border: 1px solid #CCC;
+  height: 200px;
+}
+
+.tom-shipping-box {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tom-shipping-note {
+  display: block;
+  text-align: center;
+}
+
+.tom-grid-ship {
+  width: 49%;
+  float: right;
+  border: 1px solid #CCC;
+  height: 200px;
+}
+
+.tom-truck {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

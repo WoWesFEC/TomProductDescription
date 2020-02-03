@@ -1,11 +1,21 @@
 import React from 'react';
 
-const Pricing = (props) => (
-  //conditional rendering. if onSale === true, display onSale price as normal, then also show expiration date of sale and standard price
-  <div>
-    <h3>${props.price}</h3>
-  </div>
-)
+const Pricing = function(props) {
+  if (props.id % 15 === 0) {
+    return (
+      <div>
+        <span id="tom-pricing">${(props.price*0.9).toFixed(2)}</span><span id="tom-pricing-secondary">  Was ${props.price}</span><br />
+        <span id="tom-pricing-discount">SAVE 10% through 02/29/2020</span>
+      </div>
+    )
+  } else {
+    return (
+      <div>
+        <span id="tom-pricing">${props.price}</span>
+      </div>
+    )
+  }
+};
 
 /*
   <div>
