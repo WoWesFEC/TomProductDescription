@@ -2,7 +2,7 @@ import React from 'react';
 
 const OtherStoresModal = (props) => (
   <div>
-    <a href="#share" type="button" id="tom-stores-button" onClick={props.stores}><span>CHECK OTHER STORES</span></a>
+    <a href="#stores" type="button" id="tom-stores-button" onClick={props.stores}><span>CHECK OTHER STORES</span></a>
     <div className="tom-modal-stores" id="tom-modal-stores">
       <div className="tom-modal-stores-content">
         <span className="tom-stores-close-btn" onClick={props.close}>&times;</span>

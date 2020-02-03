@@ -73,7 +73,7 @@ class App extends React.Component {
             <StoreAvailability id={this.state.productId} stores={this.clickStores} storesClose={this.clickStoresClose} />
             <ShipAvailability price={this.state.price} id={this.state.productId}/>
           </div>
-        <OtherStoresModal close={this.state.storesClose} stores={this.state.stores} id={this.state.id}/>
+        <OtherStoresModal close={this.clickStoresClose} stores={this.clickStores} id={this.state.productId}/>
         </div>
       </div>
     )
