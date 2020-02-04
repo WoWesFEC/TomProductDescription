@@ -11,7 +11,7 @@ const Pricing = function(props) {
   } else {
     return (
       <div>
-        <span id="tom-pricing">${props.price.toFixed(2)}</span>
+        <span id="tom-pricing">${props.price}</span>
       </div>
     )
   }

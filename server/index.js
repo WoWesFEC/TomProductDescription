@@ -16,12 +16,12 @@ app.get('/', (req, res) => {
       console.log('error getting info from db');
       res.send(err);
     }
+    console.log(itemInfo);
     res.send(itemInfo);
   })
 });
 
-/*
-app.get('/dogs', (req, res) => {
+app.get('/items', (req, res) => {
   console.log('dogs request received');
   let productId = req.query.ID || 48;
   console.log(req.query.ID);
@@ -31,7 +31,6 @@ app.get('/dogs', (req, res) => {
     res.send(itemInfo);
   })
 });
-*/
 
 app.listen(PORT, () => {
   console.log(`yippie-kay-yay, now listening on port ${PORT}`);
