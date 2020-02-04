@@ -11,9 +11,9 @@ class StoreAvailability extends React.Component {
       return (
         <div className="tom-grid-store">
           <div>
-            <img src="../images/LowesStore.png" alt="Store Icon" className="tom-shipping-box"></img>
+            <img src="../images/LowesStore.PNG" alt="Store Icon" className="tom-shipping-box"></img>
             <h4 className="tom-shipping-note">Ships to Store FREE</h4>
-            <img src="../images/greenCheckbox.PNG" alt="Green Checkbox"></img><p>Ready for pickup: Estimated by 02/29/2020</p>
+            <img src="../images/greenCheckbox.png" alt="Green Checkbox"></img><p>Ready for pickup: Estimated by 02/29/2020</p>
           </div>
         </div>
       )
@@ -21,7 +21,7 @@ class StoreAvailability extends React.Component {
       return (
         <div className="tom-grid-store">
           <div>
-            <img src="../images/LowesStore.png" alt="Store Icon" className="tom-shipping-box"></img>
+            <img src="../images/LowesStore.PNG" alt="Store Icon" className="tom-shipping-box"></img>
             <h4 className="tom-shipping-note">FREE Store Pickup</h4>
             <img src="../images/NoShipping.png" alt="unavailable"></img><p>Unavailable for Pickup at S.E. Austin WoWe's</p>
           </div>
@@ -31,9 +31,9 @@ class StoreAvailability extends React.Component {
       return (
         <div className="tom-grid-store">
           <div>
-            <img src="../images/LowesStore.png" alt="Store Icon" className="tom-shipping-box"></img>
+            <img src="../images/LowesStore.PNG" alt="Store Icon" className="tom-shipping-box"></img>
             <h4 className="tom-shipping-note">Ships to Store FREE</h4>
-            <img src="../images/greenCheckbox.PNG" alt="Green Checkbox"></img><p>Available for Pickup at S.E. Austin WoWe's</p>
+            <img src="../images/greenCheckbox.png" alt="Green Checkbox"></img><p>Available for Pickup at S.E. Austin WoWe's</p>
           </div>
         </div>
       )
@@ -41,7 +41,7 @@ class StoreAvailability extends React.Component {
       return (
         <div className="tom-grid-store">
           <div>
-            <img src="../images/LowesStore.png" alt="Store Icon" className="tom-shipping-box"></img>
+            <img src="../images/LowesStore.PNG" alt="Store Icon" className="tom-shipping-box"></img>
             <h4 className="tom-shipping-note">Ships to Store FREE</h4>
             <p><img src="../images/greenCheckbox.png" alt="Green Checkbox"></img><span>{this.props.id % 9} available for Pickup at S.E. Austin WoWe's</span></p>
             <div><strong>Aisle</strong> {this.props.id % 48 + 1}, <strong>Bay</strong> {this.props.id % 42 + 1}</div>
