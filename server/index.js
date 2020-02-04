@@ -10,6 +10,7 @@ app.use(express.static(__dirname + '/../client/dist'));
 
 app.get('/', (req, res) => {
   console.log('get request received');
+  res.send('hello cruel world of Docker');
 });
 
 app.get('/dogs', (req, res) => {

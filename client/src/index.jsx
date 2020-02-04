@@ -35,26 +35,26 @@ class App extends React.Component {
     })
   }
 
-  clickSave(e) {
+  clickSave() {
     console.log(`Saved ${this.state.name}, with id of ${this.state.productId}, or would if we had back-end save functionality.`);
   }
 
-  clickShare(e) {
+  clickShare() {
     console.log('Tried to share');
     document.getElementById('tom-modal-share').style.display = 'block';
   }
 
-  clickShareClose(e) {
+  clickShareClose() {
     console.log('Tried to close share');
     document.getElementById('tom-modal-share').style.display = 'none';
   }
   
-  clickStores(e) {
+  clickStores() {
     console.log('Tried to display other stores');
     document.getElementById('tom-modal-stores').style.display = 'block';
   }
 
-  clickStoresClose(e) {
+  clickStoresClose() {
     console.log('Tried to close other stores');
     document.getElementById('tom-modal-stores').style.display = 'none';
   }
