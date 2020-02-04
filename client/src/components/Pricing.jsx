@@ -11,22 +11,10 @@ const Pricing = function(props) {
   } else {
     return (
       <div>
-        <span id="tom-pricing">${props.price}</span>
+        <span id="tom-pricing">${props.price.toFixed(2)}</span>
       </div>
     )
   }
 };
-
-/*
-  <div>
-    <div id="pd-pricing grid-100 grid-parent v-spacing-medium">
-      <div id="pd-price grid-100">
-        <div id="met-product-price v-spacing-mini" data-met-type="regular">
-          <span id="primary-font jumbo strong art-pd-price">$3.98 or {this.props.price}</span>
-        </div>
-      </div>
-    </div>
-  </div>
-*/
 
 export default Pricing;

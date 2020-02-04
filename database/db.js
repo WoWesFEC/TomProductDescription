@@ -3,10 +3,19 @@ const mysqlConfig = require('./config.js');
 
 const connection = mysql.createConnection(mysqlConfig);
 
-const getAllTransactions = function(callback) {
+connection.connect();
+
+const getAllItemInfo = function(productId, callback) {
   // TODO - your code here!
-};
+  connection.query(`SELECT * FROM items WHERE id=${productId}`, function (error, results, fields) {
+    console.log('db results is', results);
+    if (error) {
+      callback(error, null);
+    }
+    callback(null, results);
+  });
+}
 
 module.exports = {
-  getAllTransactions
+  getAllItemInfo
 };

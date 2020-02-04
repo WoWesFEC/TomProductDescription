@@ -28,11 +28,20 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://127.0.0.1:3002/dogs')
-    .then((result) => {
-      console.log('got a response')
-      this.setState({dogs : result.data})
+    axios.get('http://127.0.0.1:3002/', {
+      params : {
+        ID : this.state.productId
+      }
     })
+    .then((result) => {
+      this.setState({
+        price : result.data[0].price,
+        name : result.data[0].name
+      })
+    })
+    .catch(function(error) {
+      console.log(error)
+    });
   }
 
   clickSave() {
