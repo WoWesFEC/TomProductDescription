@@ -1,8 +1,7 @@
   
 module.exports = {
-  host: '192.168.33.10',
+  host: 'http://database-2.cid9za1z1dus.us-east-2.rds.amazonaws.com',
   user: 'test', 
-  password: 'T3%tt#5t',
   database: 'FECdata',
   //socketPath: '/var/run/mysqld/mysqld.sock'
 };
