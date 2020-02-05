@@ -18,9 +18,10 @@ class ShoppingCart extends React.Component {
     e.preventDefault();
     let quantity = this.state.quantity;
     console.log('posting a request to shopping cart for quantity', quantity);
-    window.dispatchEvent(new CustomEvent("jordanAwesome", {
+    let newEvent = new CustomEvent("tomCart", {
       detail : quantity
-    }));
+    })
+    window.dispatchEvent(newEvent);
     /*
     axios.post('http://jordantopbar-env.bpppx4cenp.us-east-2.elasticbeanstalk.com/shoppingCart', {quantity : quantity})
     .then(() => {
