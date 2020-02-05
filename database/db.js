@@ -1,12 +1,11 @@
 const mysql = require('mysql');
 const mysqlConfig = require('./config.js');
 
-//const connection = mysql.createConnection(mysqlConfig);
+const connection = mysql.createConnection(mysqlConfig);
 
-//connection.connect();
+connection.connect();
 
 const getAllItemInfo = function(productId, callback) {
-  /*
   connection.query(`SELECT * FROM items WHERE id=${productId}`, function (error, results, fields) {
     console.log('db results is', results);
     if (error) {
@@ -14,7 +13,6 @@ const getAllItemInfo = function(productId, callback) {
     }
     callback(null, results);
   });
-  */
 }
 
 module.exports = {

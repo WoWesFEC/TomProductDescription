@@ -13,7 +13,6 @@ app.use(express.static(__dirname + '/../client/dist'));
 
 app.get('/', (req, res) => {
   let productId = req.query.ID || 48;
-  /*
   db.getAllItemInfo(productId, (err, itemInfo) => {
     if (err) {
       console.log('error getting info from db');
@@ -22,22 +21,21 @@ app.get('/', (req, res) => {
     console.log(itemInfo);
     res.send(itemInfo);
   })
-  */
-  res.end();
+  //res.end();
 });
 
 app.get('/items', (req, res) => {
-  console.log('dogs request received');
+  console.log('items request received');
   let productId = req.query.ID || 48;
   console.log(productId);
-  /*
   db.getAllItemInfo(productId, (err, itemInfo) => {
-    console.log('item info is', itemInfo);
+    if (err) {
+      console.log('we got an error');
+    }
     console.log('sending itemInfo to server');
     res.send(itemInfo);
   });
-  */
- res.end();
+ //res.end();
 });
 
 app.listen(PORT, () => {

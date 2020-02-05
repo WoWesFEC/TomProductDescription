@@ -19,7 +19,7 @@ class App extends React.Component {
       price : 3.98,
       name : 'Bob the Dinosaur',
       productId : 65,
-      descriptions : ['this is really useful', 'you should buy this', 'buy extra for your friends, if you have some']
+      descriptions : ['This is really useful', 'You should buy this', 'Buy extra for your friends, if you have some']
     };
     this.clickSave = this.clickSave.bind(this);
     this.clickShare = this.clickShare.bind(this);
