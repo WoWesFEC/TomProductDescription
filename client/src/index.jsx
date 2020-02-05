@@ -28,16 +28,15 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://127.0.0.1:3002/items', {
+    axios.get('/items', {
       params : {
         ID : this.state.productId
       }
     })
     .then((result) => {
-      console.log(result.data);
       this.setState({
-        price : result.data[0].price.toFixed(2),
-        name : result.data[0].name
+        price : result.data[0].price.toFixed(2) || 3.98,
+        name : result.data[0].name || 'Bob the Dinosaur'
       })
     })
     .catch(function(error) {
