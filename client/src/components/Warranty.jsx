@@ -1,5 +1,4 @@
 import React from 'react';
-//import WarrantySnip from '../images/WarrantySnip.PNG';
 
 const Warranty = function(props) {
   if (props.id % 19 === 0) {

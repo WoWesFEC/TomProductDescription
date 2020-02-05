@@ -2,20 +2,6 @@ import React from 'react';
 import axios from 'axios';
 
 class ShoppingCart extends React.Component {
-  
-  /*
-  setNativeValue(element, value) {
-    const valueSetter = Object.getOwnPropertyDescriptor(element, 'value').set;
-    const prototype = Object.getPrototypeOf(element);
-    const prototypeValueSetter = Object.getOwnPropertyDescriptor(prototype, 'value').set;
-
-    if (valueSetter && valueSetter !== prototypeValueSetter) {
-      prototypeValueSetter.call(element, value);
-    } else {
-      valueSetter.call(element, value);
-    }
-  }
-  */
 
   constructor(props) {
     super(props);
@@ -32,7 +18,7 @@ class ShoppingCart extends React.Component {
     e.preventDefault();
     let quantity = this.state.quantity;
     console.log('posting a request to shopping cart for quantity', quantity);
-    axios.post('http://127.0.0.1:3001/shoppingCart', {quantity : quantity})
+    axios.post('http://jordantopbar-env.bpppx4cenp.us-east-2.elasticbeanstalk.com/shoppingCart', {quantity : quantity})
     .then(() => {
       console.log('Posted to shopping cart');
     })
