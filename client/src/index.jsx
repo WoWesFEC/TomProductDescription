@@ -25,12 +25,47 @@ class App extends React.Component {
     this.clickShare = this.clickShare.bind(this);
     this.clickStores = this.clickStores.bind(this);
     this.clickStoresClose = this.clickStoresClose.bind(this);
+    this.getNewProductId = this.getNewProductId.bind(this);
   }
 
   componentDidMount() {
     axios.get('/items', {
       params : {
         ID : this.state.productId
+      }
+    })
+    .then((result) => {
+      this.setState({
+        price : result.data[0].price.toFixed(2) || 3.98,
+        name : result.data[0].name || 'Bob the Dinosaur'
+      })
+    })
+    .catch(function(error) {
+      console.log(error)
+    });
+    /* WROTE THIS FOR EVENT TESTING PURPOSES
+    window.addEventListener('tomCart', (event) => {
+      console.log('event heard')
+      this.checkForEvent(event)
+    })
+    */
+    window.addEventListener('jordanAwesome', this.getNewProductId);
+  }
+
+  /* WROTE THIS FOR EVENT TESTING PURPOSES
+  checkForEvent(e) {
+    console.log('detected an event');
+    console.log('finding the right value', e.detail);
+    //this.setState({productId : this.state.productId++})
+    //console.log(this.state.productId);
+  */
+
+  getNewProductId(e) {
+    console.log('e.dtail', e.detail);
+    this.setState({productId : e.detail});
+    axios.get('/items', {
+      params : {
+        ID : e.detail
       }
     })
     .then((result) => {
