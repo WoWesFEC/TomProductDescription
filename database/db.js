@@ -6,7 +6,6 @@ const connection = mysql.createConnection(mysqlConfig);
 connection.connect();
 
 const getAllItemInfo = function(productId, callback) {
-  // TODO - your code here!
   connection.query(`SELECT * FROM items WHERE id=${productId}`, function (error, results, fields) {
     console.log('db results is', results);
     if (error) {
