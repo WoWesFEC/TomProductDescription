@@ -29,7 +29,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('/items', {
+    axios.get('http://wowes-env-1.jnkdqwmw8j.us-east-2.elasticbeanstalk.com/items', {
       params : {
         ID : this.state.productId
       }
@@ -63,7 +63,7 @@ class App extends React.Component {
   getNewProductId(e) {
     console.log('e.dtail', e.detail);
     this.setState({productId : e.detail});
-    axios.get('/items', {
+    axios.get('http://wowes-env-1.jnkdqwmw8j.us-east-2.elasticbeanstalk.com/items', {
       params : {
         ID : e.detail
       }
