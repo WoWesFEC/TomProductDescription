@@ -1,7 +1,7 @@
 import React from 'react';
 
 const OtherStoresModal = (props) => (
-  <div>
+  <div className="tom-modal-grid">
     <a href="#stores" type="button" id="tom-stores-button" onClick={props.stores}><span>CHECK OTHER STORES</span></a>
     <div className="tom-modal-stores" id="tom-modal-stores">
       <div className="tom-modal-stores-content">

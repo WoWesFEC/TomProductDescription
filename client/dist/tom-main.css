@@ -3,11 +3,12 @@ html {
 }
 
 .tom-component {
-  /*width: 50%;*/
+  width: 50%;
   padding-top: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
+  border: 1px solid #CCC;
 }
 
 #tom-pricing {
@@ -39,6 +40,17 @@ html {
   height:71.53px;
 }
 
+.tom-cart-group {
+  width: 100%;
+  left: 0px;
+  clear: both;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 54px;
+}
+
 .tom-cart-buttons {
   width: 40%;
   float: left;
@@ -55,6 +67,7 @@ html {
 }
 
 .tom-cart-adjuster {
+  width:33%;
   color: #0471AF;
   cursor: pointer;
   display: table-cell;
@@ -71,7 +84,7 @@ html {
 }
 
 .tom-cart-quantity {
-  width: 50px;
+  width: 33%;
   text-align: center;
   padding: 0;
   display: table-cell;
@@ -81,6 +94,7 @@ html {
   box-sizing: border-box;
   background-color: #FFF;
   border-radius: 0;
+  margin-bottom: 15px;
 }
 
 .tom-cart {
@@ -116,9 +130,9 @@ html {
   left: 0px;
   clear: both;
   box-sizing: border-box;
+  margin-bottom: 15px;
   padding-left: 10px;
   padding-right: 10px;
-  margin-bottom: 15px;
   height: 39px;
 }
 
@@ -142,7 +156,7 @@ html {
   margin-left: auto;
   box-sizing: border-box;
   padding: 0;
-  height: 54px;
+  height: 39px;
   cursor: pointer;
   border-radius: 0;
   border: 1px solid #CCC;
@@ -166,7 +180,7 @@ html {
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
-  height: 54px;
+  height: 39px;
   cursor: pointer;
   border-radius: 0;
   border: 1px solid #CCC;
@@ -190,7 +204,7 @@ html {
   margin-left: auto;
   box-sizing: border-box;
   padding: 0;
-  height: 54px;
+  height: 39px;
   cursor: pointer;
   border-radius: 0;
   border: 1px solid #CCC;
@@ -207,7 +221,6 @@ html {
   bottom: 0;
   width: 100%;
   height: 100%; 
-  margin: 7% auto;
   background-color: rgb(0,0,0);
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -275,8 +288,9 @@ html {
   top: 0;
   bottom: 0;
   width: 100%;
-  height: 100%; 
-  margin: 7% auto;
+  height: 100%;
+  vertical-align: center;
+  border: 1px solid #CCC;
   background-color: rgb(0,0,0);
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -362,6 +376,38 @@ html {
   font-weight: bold;
 }
 
+.tom-modal-grid {
+  width: 100%;
+  clear: both;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: block;
+  font-size: 14px;
+}
+
+#tom-stores-button {
+  border: 1px solid #CCC;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  /*height: 34px;*/
+  display: inline;
+  font-weight: 400;
+  color: #0471AF;
+  font-size: 1rem;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
 .tom-stores-close-btn:hover,
 .tom-stores-close-btn:focus {
   color: #000;
@@ -370,10 +416,43 @@ html {
 }
 
 .tom-grid-store {
-  width: 49%;
+  width: 45%;
   float: left;
-  border: 1px solid #CCC;
-  height: 200px;
+  height: 180px;
+  padding-left: 10px;
+}
+
+.tom-shipping-note {
+  display: block;
+  text-align: center;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+}
+
+.tom-shipping-icon {
+  display: table-cell;
+  vertical-align: top;
+  padding-right: 10px;
+}
+
+.tom-shipping-text {
+  display: table-cell;
+  vertical-align: top;
+  font-size: 1rem;
+  line-height: 1.4em;
+  color: #333;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  border: 1px red;
+}
+
+.tom-store-item-location {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .tom-shipping-box {
@@ -382,20 +461,30 @@ html {
   margin-right: auto;
 }
 
-.tom-shipping-note {
-  display: block;
-  text-align: center;
-}
-
 .tom-grid-ship {
-  width: 49%;
+  width: 45%;
   float: right;
-  border: 1px solid #CCC;
-  height: 200px;
+  height: 180px;
+  padding-right: 10px;
 }
 
 .tom-truck {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.tom-ruler {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 1px;
+  background: #E5E5E5;
+  display: block;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+  font-size: 14px;
+  border-width: 0px;
 }

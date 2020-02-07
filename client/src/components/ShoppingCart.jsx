@@ -55,7 +55,7 @@ class ShoppingCart extends React.Component {
   render() {
     return (
       <div>
-        <div className="tom-grid-100">
+        <div className="tom-grid-100 tom-cart-group">
           <div className="tom-cart-buttons">
             <div className="tom-cart-button-group">
               <button type="button" className="tom-cart-adjuster" onClick={this.decreaseQuantity}><i>-</i></button>

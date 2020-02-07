@@ -18,7 +18,7 @@ class App extends React.Component {
       dogs : ['fluffy', 'spot', 'fido'],
       price : 3.98,
       name : 'Bob the Dinosaur',
-      productId : 65,
+      productId : 1,
       descriptions : ['This is really useful', 'You should buy this', 'Buy extra for your friends, if you have some']
     };
     this.clickSave = this.clickSave.bind(this);
@@ -29,6 +29,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    /*
     axios.get('http://wowes-env-1.jnkdqwmw8j.us-east-2.elasticbeanstalk.com/items', {
       params : {
         ID : this.state.productId
@@ -43,6 +44,7 @@ class App extends React.Component {
     .catch(function(error) {
       console.log(error)
     });
+    */
     /* WROTE THIS FOR EVENT TESTING PURPOSES
     window.addEventListener('tomCart', (event) => {
       console.log('event heard')
@@ -63,6 +65,7 @@ class App extends React.Component {
   getNewProductId(e) {
     console.log('e.dtail', e.detail);
     this.setState({productId : e.detail});
+    /*
     axios.get('http://wowes-env-1.jnkdqwmw8j.us-east-2.elasticbeanstalk.com/items', {
       params : {
         ID : e.detail
@@ -77,6 +80,7 @@ class App extends React.Component {
     .catch(function(error) {
       console.log(error)
     });
+    */
   }
 
   clickSave() {
@@ -110,15 +114,17 @@ class App extends React.Component {
         <LowStock id={this.state.productId} />
         <Description id={this.state.productId} bullets={this.state.descriptions} />
         <Warranty id={this.state.productId} />
-        <ShoppingCart name={this.state.name} price={this.state.price}/>
-        <SaveShare url="http://www.google.com" image0="https://pbs.twimg.com/profile_banners/98042827/1528588486/1080x360" save={this.clickSave} share={this.clickShare} shareClose={this.clickShareClose} id={this.state.productId} name={this.state.name}/>
-        <div>
-          <div className="tom-grid-100">
-            <StoreAvailability id={this.state.productId} stores={this.clickStores} storesClose={this.clickStoresClose} />
-            <ShipAvailability price={this.state.price} id={this.state.productId}/>
-          </div>
-        <OtherStoresModal close={this.clickStoresClose} stores={this.clickStores} id={this.state.productId}/>
+        <hr className="tom-ruler"></hr>
+        <div className="tom-grid-100">
+          <ShoppingCart name={this.state.name} price={this.state.price}/>
+          <SaveShare url="http://www.google.com" image0="https://pbs.twimg.com/profile_banners/98042827/1528588486/1080x360" save={this.clickSave} share={this.clickShare} shareClose={this.clickShareClose} id={this.state.productId} name={this.state.name}/>
         </div>
+        <hr className="tom-ruler"></hr>
+        <div className="tom-grid-100">
+          <StoreAvailability id={this.state.productId} stores={this.clickStores} storesClose={this.clickStoresClose} />
+          <ShipAvailability price={this.state.price} id={this.state.productId}/>
+        </div>
+        <OtherStoresModal close={this.clickStoresClose} stores={this.clickStores} id={this.state.productId}/>
       </div>
     )
   }
