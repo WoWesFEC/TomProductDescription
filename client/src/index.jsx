@@ -29,7 +29,6 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    /*
     axios.get('http://wowes-env-1.jnkdqwmw8j.us-east-2.elasticbeanstalk.com/items', {
       params : {
         ID : this.state.productId
@@ -44,7 +43,6 @@ class App extends React.Component {
     .catch(function(error) {
       console.log(error)
     });
-    */
     /* WROTE THIS FOR EVENT TESTING PURPOSES
     window.addEventListener('tomCart', (event) => {
       console.log('event heard')
@@ -65,7 +63,6 @@ class App extends React.Component {
   getNewProductId(e) {
     console.log('e.dtail', e.detail);
     this.setState({productId : e.detail});
-    /*
     axios.get('http://wowes-env-1.jnkdqwmw8j.us-east-2.elasticbeanstalk.com/items', {
       params : {
         ID : e.detail
@@ -80,7 +77,6 @@ class App extends React.Component {
     .catch(function(error) {
       console.log(error)
     });
-    */
   }
 
   clickSave() {
