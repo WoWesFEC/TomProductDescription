@@ -14,8 +14,12 @@ const ShipAvailability = function(props) {
         <img src="../images/LowesTruck.png" alt="Shipping Truck" className="tom-truck"></img>
         <h4 className="tom-shipping-note">{deliveryStatus}</h4>
         <div>
-          <img src="../images/NoShipping.png" alt="unavailable"></img>
-          <span>Currently unavailable</span>
+          <div className="tom-shipping-icon">
+            <img src="../images/NoShipping.png" alt="unavailable"></img>
+          </div>
+          <div className="tom-shipping-text">
+            <span>Currently unavailable</span>
+          </div>
         </div>
       </div>
     )
@@ -25,8 +29,12 @@ const ShipAvailability = function(props) {
         <img src="../images/LowesTruck.png" alt="Shipping Truck" className="tom-truck"></img>
         <h4 className="tom-shipping-note">{deliveryStatus}</h4>
         <div>
-          <img src="../images/greenCheckbox.png" alt="Green Checkbox"></img>
-          <span>Ready for delivery: Estimated on 02/29/2020</span>
+          <div className="tom-shipping-icon">
+            <img src="../images/greenCheckbox.png" alt="Green Checkbox"></img>
+          </div>
+          <div className="tom-shipping-text">
+            <span>Ready for delivery: Estimated on 02/29/2020</span>
+          </div>
         </div>
       </div>
     )
@@ -36,8 +44,12 @@ const ShipAvailability = function(props) {
         <img src="../images/LowesTruck.png" alt="Shipping Truck" className="tom-truck"></img>
         <h4 className="tom-shipping-note">{deliveryStatus}</h4>
         <div>
-          <img src="../images/greenCheckbox.png" alt="Green Checkbox"></img>
-          <span>Available!</span>
+          <div className="tom-shipping-icon">
+            <img src="../images/greenCheckbox.png" alt="Green Checkbox"></img>
+          </div>
+          <div className="tom-shipping-text">
+           <span>Available!</span>
+          </div>
         </div>
       </div>
     )

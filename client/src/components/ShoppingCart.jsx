@@ -34,7 +34,11 @@ class ShoppingCart extends React.Component {
   }
 
   handleChange(e) {
-    this.setState({quantity : e.target.value});
+    let newValue = e.target.value;
+    if (e.target.value.isNaN || e.target.value < 1) {
+      newValue = 1;
+    }
+    this.setState({quantity : newValue});
   }
 
   increaseQuantity(e) {
