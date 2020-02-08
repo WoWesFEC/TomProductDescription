@@ -2,7 +2,7 @@ import React from 'react';
 
 const ShareOnly = (props) => (
   <div className="tom-share-only">
-    <img src="../images/Share.png"></img><a href="#share" type="button" id="tom-share-button" onClick={props.share}><span>SHARE</span></a>
+    <div><img src="../images/Share.png" className="tom-share-button"></img><a href="#share" className="tom-share-text" onClick={props.share}><i aria-hidden="true" className="icon-heart-outline"></i> <span>SHARE</span></a></div>
     <div className="tom-modal-share" id="tom-modal-share">
       <div className="tom-modal-share-content">
         <span className="tom-share-close-btn" onClick={props.shareClose}>&times;</span>
