@@ -22,7 +22,7 @@ class ShoppingCart extends React.Component {
       detail : quantity
     })
     window.dispatchEvent(newEvent);
-    /*
+    /* INITIAL DEPLOYMENT, BEFORE WE CHANGED TO USING EVENTS TO CHANGE STATE ON OTHER COMPONENTS
     axios.post('http://jordantopbar-env.bpppx4cenp.us-east-2.elasticbeanstalk.com/shoppingCart', {quantity : quantity})
     .then(() => {
       console.log('Posted to shopping cart');
