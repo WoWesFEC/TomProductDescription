@@ -1,13 +1,15 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable prefer-destructuring */
 import React from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 
 class ShoppingCart extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
-      quantity: 1
-    }
+      quantity: 1,
+    };
     this.addToCart = this.addToCart.bind(this);
     this.increaseQuantity = this.increaseQuantity.bind(this);
     this.decreaseQuantity = this.decreaseQuantity.bind(this);
@@ -16,11 +18,10 @@ class ShoppingCart extends React.Component {
 
   addToCart(e) {
     e.preventDefault();
-    let quantity = this.state.quantity;
-    console.log('posting a request to shopping cart for quantity', quantity);
-    let newEvent = new CustomEvent("tomCart", {
-      detail : quantity
-    })
+    const quantity = this.state.quantity;
+    const newEvent = new CustomEvent('tomCart', {
+      detail: quantity,
+    });
     window.dispatchEvent(newEvent);
     /* INITIAL DEPLOYMENT, BEFORE WE CHANGED TO USING EVENTS TO CHANGE STATE ON OTHER COMPONENTS
     axios.post('http://jordantopbar-env.bpppx4cenp.us-east-2.elasticbeanstalk.com/shoppingCart', {quantity : quantity})
@@ -38,24 +39,24 @@ class ShoppingCart extends React.Component {
     if (e.target.value.isNaN || e.target.value < 1) {
       newValue = 1;
     }
-    this.setState({quantity : newValue});
+    this.setState({ quantity: newValue });
   }
 
   increaseQuantity(e) {
     e.preventDefault();
-    let currentQuantity = this.state.quantity;
-    let newQuantity = currentQuantity+1;
-    this.setState({ quantity : newQuantity});
+    const currentQuantity = this.state.quantity;
+    const newQuantity = currentQuantity + 1;
+    this.setState({ quantity: newQuantity });
   }
 
   decreaseQuantity(e) {
     e.preventDefault();
-    let currentQuantity = this.state.quantity;
+    const currentQuantity = this.state.quantity;
     if (currentQuantity > 1) {
-      this.setState({quantity: currentQuantity-1});
+      this.setState({ quantity: currentQuantity - 1 });
     }
   }
-  
+
   render() {
     return (
       <div>
@@ -63,7 +64,7 @@ class ShoppingCart extends React.Component {
           <div className="tom-cart-buttons">
             <div className="tom-cart-button-group">
               <button type="button" className="tom-cart-adjuster" onClick={this.decreaseQuantity}><i>-</i></button>
-              <input id="tom-cart-value" className="tom-cart-quantity" value={this.state.quantity} onChange={this.handleChange}></input>
+              <input id="tom-cart-value" className="tom-cart-quantity" value={this.state.quantity} onChange={this.handleChange} />
               <button type="button" className="tom-cart-adjuster" onClick={this.increaseQuantity}><i>+</i></button>
             </div>
           </div>
@@ -72,7 +73,7 @@ class ShoppingCart extends React.Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
