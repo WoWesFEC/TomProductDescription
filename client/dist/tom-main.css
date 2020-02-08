@@ -333,6 +333,45 @@ html {
   color: #333;
 }
 
+.tom-modal-stores-search {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  white-space: nowrap;
+}
+
+.tom-modal-stores-input {
+  height: 44px;
+  display: table-cell;
+  width: 499px;
+  padding-right: .8em;
+  font-size: 1rem;
+  border: 1px solid #CCC;
+  box-sizing: border-box;
+}
+
+.tom-modal-stores-input::placeholder {
+  padding-left: 10px;
+}
+
+.tom-modal-stores-find-button {
+  padding-top: 0px;
+  padding-right: 15px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  height: 44px;
+  text-align: center;
+  border: 1px solid #0471AF;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #FFF;
+  background-color: #0471AF;
+  right: 0px;
+  position: absolute;
+}
+
 .tom-modal-stores-content {
   position: relative; 
   background-color: white;
@@ -392,7 +431,7 @@ html {
   font-size: 1rem;
   color: #FFF;
   background-color: #0471AF;
-  right: 15px;
+  right: 20px;
   position: absolute;
 }
 

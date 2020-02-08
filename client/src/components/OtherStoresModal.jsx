@@ -7,6 +7,9 @@ const OtherStoresModal = (props) => (
       <div className="tom-modal-stores-content">
         <span className="tom-stores-close-btn" onClick={props.close}>&times;</span>
         <h4 className="tom-modal-stores-title">Find a Store</h4>
+        <div className="tom-modal-stores-search">
+          <input type="text" placeholder="Zip Code or City, State" className="tom-modal-stores-input"></input><button className="tom-modal-stores-find-button">FIND</button>
+        </div>
         <ul className="tom-modal-stores-list">
           <li><div className="tom-modal-stores-item"><span className="tom-modal-stores-storename">S.W. Austin WoWe's</span><br /><span>6400 Brodie Ln</span><br /><span>Austin, TX</span></div><div className="tom-media-middle"><span className="tom-align-right"><img src="../images/greenCheckbox.png" alt="green checkbox"></img><small><strong>{props.id % 10} available</strong></small></span><button className="tom-other-stores-button">SHOP THIS STORE</button></div></li>
           <hr className="tom-modal-stores-line"></hr>
