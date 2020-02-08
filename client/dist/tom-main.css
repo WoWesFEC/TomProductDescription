@@ -9,6 +9,7 @@ html {
   padding-bottom: 20px;
   padding-left: 20px;
   border: 1px solid #CCC;
+  font-family: Helvetica,Arial, Helvetica, sans-serif;
 }
 
 #tom-dollar-sign {
@@ -73,7 +74,7 @@ html {
 }
 
 .tom-cart-adjuster {
-  width:33%;
+  width: 20%;
   color: #0471AF;
   cursor: pointer;
   display: table-cell;
@@ -91,7 +92,7 @@ html {
 }
 
 .tom-cart-quantity {
-  width: 33%;
+  width: 50px;
   text-align: center;
   padding: 0;
   display: table-cell;
@@ -141,7 +142,7 @@ html {
   margin-bottom: 15px;
   padding-left: 10px;
   padding-right: 10px;
-  height: 39px;
+  height: 54px;
 }
 
 .tom-grid-50-left {
@@ -164,11 +165,22 @@ html {
   margin-left: auto;
   box-sizing: border-box;
   padding: 0;
-  height: 39px;
+  height: 54px;
   cursor: pointer;
   border-radius: 0;
   border: 1px solid #CCC;
   text-align: center;
+}
+
+.tom-heart {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.tom-save-text {
+  margin-top: 21px;
+  margin-bottom: 18px;
+  position: absolute;
 }
 
 .tom-saved {
@@ -188,7 +200,7 @@ html {
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
-  height: 39px;
+  height: 54px;
   cursor: pointer;
   border-radius: 0;
   border: 1px solid #CCC;
@@ -212,11 +224,22 @@ html {
   margin-left: auto;
   box-sizing: border-box;
   padding: 0;
-  height: 39px;
+  height: 54px;
   cursor: pointer;
   border-radius: 0;
   border: 1px solid #CCC;
   text-align: center;
+}
+
+.tom-share-button {
+  margin-top: 16.5px;
+  margin-bottom: 16.5px;
+}
+
+.tom-share-text {
+  margin-top: 20px;
+  margin-bottom: 17px;
+  position: absolute;
 }
 
 .tom-modal-share {
@@ -401,7 +424,6 @@ html {
   padding-right: 15px;
   padding-bottom: 10px;
   padding-left: 15px;
-  /*height: 34px;*/
   display: inline;
   font-weight: 400;
   color: #0471AF;

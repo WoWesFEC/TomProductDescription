@@ -68,7 +68,7 @@ class ShoppingCart extends React.Component {
             </div>
           </div>
           <div className="tom-cart">
-            <button type="submit" className="tom-cart-submit" onClick={this.addToCart}>Add To Cart</button>
+            <button type="submit" className="tom-cart-submit" onClick={this.addToCart}>ADD TO CART</button>
           </div>
         </div>
       </div>
