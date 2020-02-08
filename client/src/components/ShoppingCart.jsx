@@ -1,6 +1,5 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/destructuring-assignment */
-/* eslint-disable prefer-destructuring */
 import React from 'react';
 // import axios from 'axios';
 
@@ -18,9 +17,9 @@ class ShoppingCart extends React.Component {
 
   addToCart(e) {
     e.preventDefault();
-    const quantity = this.state.quantity;
+    const currentQuantity = this.state.quantity;
     const newEvent = new CustomEvent('tomCart', {
-      detail: quantity,
+      detail: currentQuantity,
     });
     window.dispatchEvent(newEvent);
     /* INITIAL DEPLOYMENT, BEFORE WE CHANGED TO USING EVENTS TO CHANGE STATE ON OTHER COMPONENTS
@@ -57,14 +56,14 @@ class ShoppingCart extends React.Component {
     }
   }
 
-  render() {
+  render({ quantity }) {
     return (
       <div>
         <div className="tom-grid-100 tom-cart-group">
           <div className="tom-cart-buttons">
             <div className="tom-cart-button-group">
               <button type="button" className="tom-cart-adjuster" onClick={this.decreaseQuantity}><i>-</i></button>
-              <input id="tom-cart-value" className="tom-cart-quantity" value={this.state.quantity} onChange={this.handleChange} />
+              <input id="tom-cart-value" className="tom-cart-quantity" value={quantity} onChange={this.handleChange} />
               <button type="button" className="tom-cart-adjuster" onClick={this.increaseQuantity}><i>+</i></button>
             </div>
           </div>

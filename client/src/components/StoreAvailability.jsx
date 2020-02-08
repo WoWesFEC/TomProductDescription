@@ -1,11 +1,10 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable no-mixed-operators */
-/* eslint-disable react/prefer-stateless-function */
 /* eslint-disable no-else-return */
 /* eslint-disable react/prop-types */
 import React from 'react';
 
-class StoreAvailability extends React.Component {
+class StoreAvailability extends React.PureComponent {
   render() {
     const { id } = this.props;
     if (id % 21 === 0) {
