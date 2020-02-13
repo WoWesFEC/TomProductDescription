@@ -3,16 +3,24 @@ html {
 }
 
 .tom-component {
-  width: 50%;
+  /*width: 50%;*/
   padding-top: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
+  border: 1px solid #CCC;
+  font-family: Helvetica,Arial, Helvetica, sans-serif;
+}
+
+#tom-dollar-sign {
+  font-size: 40%;
+  vertical-align: super;
 }
 
 #tom-pricing {
   font-weight: 900;
   font-size: 2.571428571428rem;
+  margin-left: 15px;
 }
 
 #tom-pricing-secondary {
@@ -39,6 +47,17 @@ html {
   height:71.53px;
 }
 
+.tom-cart-group {
+  width: 100%;
+  left: 0px;
+  clear: both;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 54px;
+}
+
 .tom-cart-buttons {
   width: 40%;
   float: left;
@@ -47,7 +66,7 @@ html {
 
 .tom-cart-button-group {
   width: 100%;
-  height: 54px;
+  height: 54.4px;
   margin: 0;
   padding: 0;
   display: table;
@@ -55,19 +74,21 @@ html {
 }
 
 .tom-cart-adjuster {
+  width: 20%;
   color: #0471AF;
   cursor: pointer;
   display: table-cell;
   border: 1px solid #CCC;
   font-size: 1rem;
   font-weight: 400;
-  padding-top: 0px;
+  padding-top: 5px;
   padding-right: 15px;
-  padding-bottom: 0px;
+  padding-bottom: 5px;
   padding-left: 15px;
+  margin-bottom: 0.4px;
   box-sizing: border-box;
   background-color: #FFF;
-  height: 54px;
+  height: 54.4px;
 }
 
 .tom-cart-quantity {
@@ -81,6 +102,8 @@ html {
   box-sizing: border-box;
   background-color: #FFF;
   border-radius: 0;
+  margin-right: 1px;
+  margin-bottom: 15px;
 }
 
 .tom-cart {
@@ -116,10 +139,10 @@ html {
   left: 0px;
   clear: both;
   box-sizing: border-box;
+  margin-bottom: 15px;
   padding-left: 10px;
   padding-right: 10px;
-  margin-bottom: 15px;
-  height: 39px;
+  height: 54px;
 }
 
 .tom-grid-50-left {
@@ -147,6 +170,17 @@ html {
   border-radius: 0;
   border: 1px solid #CCC;
   text-align: center;
+}
+
+.tom-heart {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.tom-save-text {
+  margin-top: 21px;
+  margin-bottom: 18px;
+  position: absolute;
 }
 
 .tom-saved {
@@ -197,6 +231,17 @@ html {
   text-align: center;
 }
 
+.tom-share-button {
+  margin-top: 16.5px;
+  margin-bottom: 16.5px;
+}
+
+.tom-share-text {
+  margin-top: 20px;
+  margin-bottom: 17px;
+  position: absolute;
+}
+
 .tom-modal-share {
   display: none;
   position: fixed; 
@@ -207,7 +252,6 @@ html {
   bottom: 0;
   width: 100%;
   height: 100%; 
-  margin: 7% auto;
   background-color: rgb(0,0,0);
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -275,8 +319,9 @@ html {
   top: 0;
   bottom: 0;
   width: 100%;
-  height: 100%; 
-  margin: 7% auto;
+  height: 100%;
+  vertical-align: center;
+  border: 1px solid #CCC;
   background-color: rgb(0,0,0);
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -286,6 +331,46 @@ html {
   line-height: 1.5rem;
   font-size: 1.285714285714rem;
   color: #333;
+  margin-bottom: 15px;
+}
+
+.tom-modal-stores-search {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  white-space: nowrap;
+}
+
+.tom-modal-stores-input {
+  height: 44px;
+  display: table-cell;
+  width: 499px;
+  padding-right: .8em;
+  font-size: 1rem;
+  border: 1px solid #CCC;
+  box-sizing: border-box;
+}
+
+.tom-modal-stores-input::placeholder {
+  padding-left: 10px;
+}
+
+.tom-modal-stores-find-button {
+  padding-top: 0px;
+  padding-right: 15px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  height: 44px;
+  text-align: center;
+  border: 1px solid #0471AF;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #FFF;
+  background-color: #0471AF;
+  right: 0px;
+  position: absolute;
 }
 
 .tom-modal-stores-content {
@@ -347,7 +432,7 @@ html {
   font-size: 1rem;
   color: #FFF;
   background-color: #0471AF;
-  right: 15px;
+  right: 20px;
   position: absolute;
 }
 
@@ -362,6 +447,37 @@ html {
   font-weight: bold;
 }
 
+.tom-modal-grid {
+  width: 100%;
+  clear: both;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: block;
+  font-size: 14px;
+}
+
+#tom-stores-button {
+  border: 1px solid #CCC;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  display: inline;
+  font-weight: 400;
+  color: #0471AF;
+  font-size: 1rem;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
 .tom-stores-close-btn:hover,
 .tom-stores-close-btn:focus {
   color: #000;
@@ -370,10 +486,43 @@ html {
 }
 
 .tom-grid-store {
-  width: 49%;
+  width: 45%;
   float: left;
-  border: 1px solid #CCC;
-  height: 200px;
+  height: 180px;
+  padding-left: 10px;
+}
+
+.tom-shipping-note {
+  display: block;
+  text-align: center;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+}
+
+.tom-shipping-icon {
+  display: table-cell;
+  vertical-align: top;
+  padding-right: 10px;
+}
+
+.tom-shipping-text {
+  display: table-cell;
+  vertical-align: top;
+  font-size: 1rem;
+  line-height: 1.4em;
+  color: #333;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  border: 1px red;
+}
+
+.tom-store-item-location {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 10px;
 }
 
 .tom-shipping-box {
@@ -382,20 +531,32 @@ html {
   margin-right: auto;
 }
 
-.tom-shipping-note {
-  display: block;
-  text-align: center;
-}
-
 .tom-grid-ship {
-  width: 49%;
+  width: 45%;
   float: right;
-  border: 1px solid #CCC;
-  height: 200px;
+  height: 180px;
+  padding-right: 10px;
 }
 
 .tom-truck {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.tom-ruler {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 1px;
+  background: #E5E5E5;
+  display: block;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+  font-size: 14px;
+  border-width: 0px;
 }

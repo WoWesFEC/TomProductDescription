@@ -1,30 +1,36 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable react/no-access-state-in-setstate */
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/prop-types */
 import React from 'react';
 
 class Description extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor({ id, bullets }) {
+    super();
     this.state = {
-      id : this.props.id,
-      bullets : this.props.bullets
-    }
+      id,
+      bullets,
+    };
   }
+
   componentDidMount() {
-    let bulletVal = this.state.bullets;
+    const bulletVal = this.state.bullets;
     if (this.state.id % 10 === 9) {
       bulletVal.pop();
     }
-    this.setState({bullets : bulletVal});
+    this.setState({ bullets: bulletVal });
   }
+
   render() {
     return (
       <div>
         <ul>
-          {this.state.bullets.map((description, index) => (
-            <li className="tom-bullet" key={index}>{description}</li>
+          {this.state.bullets.map((description) => (
+            <li className="tom-bullet" key={description}>{description}</li>
           ))}
         </ul>
       </div>
-    )
+    );
   }
 }
 
